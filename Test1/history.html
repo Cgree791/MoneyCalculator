@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Change History</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Change History</h1>
+        <ul id="historyList"></ul>
+        <button onclick="clearHistory()">Clear History</button>
+        <button onclick="window.location.href='index.html'">Go Back</button>
+    </div>
+    <script>
+        function loadHistory() {
+            const history = JSON.parse(localStorage.getItem('history')) || [];
+            const historyList = document.getElementById('historyList');
+
+            history.forEach(entry => {
+                const listItem = document.createElement('li');
+                listItem.textContent = `Total: $${entry.total} - ${entry.timestamp}`;
+                historyList.appendChild(listItem);
+            });
+        }
+
+        function clearHistory() {
+            localStorage.removeItem('history');
+            document.getElementById('historyList').innerHTML = ''; // Clear the list in the UI
+        }
+
+        window.onload = loadHistory;
+    </script>
+</body>
+</html>
