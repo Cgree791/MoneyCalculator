@@ -1,10 +1,11 @@
-# Testing
-Money Calculator that saves on refresh (WIP)
-This website comes in helpful when you need to find out how much
-money you have but only know the amount of quarters,nickles,dimes, ect... you have 
-you just put it into the proper spots and press Calculate
-and BOOM it shows you the total amount of money you have!
-All you need to know is how many you have!
+Money Calculator (WIP)
+This convenient tool helps you quickly calculate the total amount of money you have based on the number of coins in your possession. Whether you have quarters, nickels, dimes, pennies, or other coins, input the quantity of each into the appropriate fields and press Calculate to see your total instantly.
 
-(WIP FEEDBACK) V1
-Made the calculator and the history, shows the history, but when you go back it duplicates current total, (COSNTANTLY DUPING)
+What sets this calculator apart is its ability to save your inputs even after refreshing the page, ensuring your data is preserved and ready for later use without needing to re-enter it.
+
+Perfect for quickly determining how much change you have without hassle—count your coins, enter the amount, and let the Money Calculator do the math for you!
+
+(UPDATE LOGS)
+V1.
+V2.
+V3.
