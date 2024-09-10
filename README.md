@@ -12,4 +12,4 @@ V1. Made the calculator and the history, shows the history, but when you go back
 
 V2. Currently, the history just updates on refresh of the main page causing the total to repeat many times
 
-V3.Added a auto-updating amount for each set of money so you can see it update live, and they calculate the total to add them all together, fixed some small bugs of money, and light look difference
+V3.Added an auto-updating amount for each set of money so you can see it update live, and they calculate the total to add them all together, fixed some small bugs of money, and light look difference
