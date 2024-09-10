@@ -6,4 +6,4 @@ What sets this calculator apart is its ability to save your inputs even after re
 
 Perfect for quickly determining how much change you have without hassle—count your coins, enter the amount, and let the Money Calculator do the math for you!
 
-(UPDATE LOGS)
+Go to the latest version for the best user experience or go to another one if you want to, i won't stop you.
