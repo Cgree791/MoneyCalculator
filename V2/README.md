@@ -8,6 +8,6 @@ Perfect for quickly determining how much change you have without hassle—count 
 
 (UPDATE LOGS)
 
-V1. Made the calculator and the history, shows the history, but when you go back it duplicates current total, (COSNTANTLY DUPING)
+V1. Made the calculator and the history, shows the history, but when you go back it duplicates the current total, (CONSTANTLY DUPING)
 
-V2. Currently the history just updates on refresh of the main page causing the total to repeat many times
+V2. Currently, the history just updates on refresh of the main page causing the total to repeat many times
