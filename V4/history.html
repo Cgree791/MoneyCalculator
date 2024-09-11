@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
+    <div class="container history-section">
         <h1>Change History</h1>
         <ul id="historyList"></ul>
         <button onclick="clearHistory()">Clear History</button>
@@ -31,6 +31,9 @@
         }
 
         window.onload = loadHistory;
+
+        // Optional: Toggle dark mode for demo purposes
+        document.body.classList.add('dark-mode'); // Remove this line if not needed
     </script>
 </body>
 </html>

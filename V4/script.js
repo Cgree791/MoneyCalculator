@@ -85,6 +85,19 @@ function clearFields() {
 
     document.getElementById('totalAmount').textContent = '$0.00';
 }
+function toggleInstructions() {
+    const instructions = document.querySelector('.instructions');
+    const collapseBtn = document.querySelector('.collapse-btn');
+    const isVisible = instructions.style.maxHeight !== '0px';
+
+    if (isVisible) {
+        instructions.style.maxHeight = '0';
+        collapseBtn.textContent = 'Show Instructions';
+    } else {
+        instructions.style.maxHeight = `${instructions.scrollHeight}px`;
+        collapseBtn.textContent = 'Hide Instructions';
+    }
+}
 
 window.onload = function() {
     loadValues();

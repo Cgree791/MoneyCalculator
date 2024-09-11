@@ -1,4 +1,5 @@
-<!DOCTYPE html> <!--DUPLICATING HISTORY-->
+<!--calculator.html-->
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -9,49 +10,74 @@
 <body>
     <div class="container">
         <h1>Money Tracker</h1>
+        <div class="instructions">
+            <button class="collapse-btn" onclick="toggleInstructions()">Show Instructions</button>
+            <div class="instructions-content">
+                <p>Welcome to the Money Tracker! To use this tool:</p>
+                <ul>
+                    <li>Enter the number of each type of bill or coin you have.</li>
+                    <li>The amount for each type will be displayed next to the input.</li>
+                    <li>Click 'Calculate Total' to see the total amount of money you have.</li>
+                    <li>Click 'Clear All' to reset all fields to zero.</li>
+                    <li>Click 'Open Change History' to view your past calculations.</li>
+                </ul>
+            </div>
+        </div>
+        <!-- Input fields for the bills and coins -->
         <div class="input-grid">
             <div class="input-group">
                 <label for="hundred">100 Dollar Bills:</label>
                 <input type="number" id="hundred" value="0" min="0">
+                <span class="amount-display" id="hundred-amount">$0.00</span>
             </div>
             <div class="input-group">
                 <label for="fifty">50 Dollar Bills:</label>
                 <input type="number" id="fifty" value="0" min="0">
+                <span class="amount-display" id="fifty-amount">$0.00</span>
             </div>
             <div class="input-group">
                 <label for="twenty">20 Dollar Bills:</label>
                 <input type="number" id="twenty" value="0" min="0">
+                <span class="amount-display" id="twenty-amount">$0.00</span>
             </div>
             <div class="input-group">
                 <label for="five">5 Dollar Bills:</label>
                 <input type="number" id="five" value="0" min="0">
+                <span class="amount-display" id="five-amount">$0.00</span>
             </div>
             <div class="input-group">
                 <label for="one">1 Dollar Bills:</label>
                 <input type="number" id="one" value="0" min="0">
+                <span class="amount-display" id="one-amount">$0.00</span>
             </div>
             <div class="input-group">
                 <label for="quarter">Quarters:</label>
                 <input type="number" id="quarter" value="0" min="0">
+                <span class="amount-display" id="quarter-amount">$0.00</span>
             </div>
             <div class="input-group">
                 <label for="dime">Dimes:</label>
                 <input type="number" id="dime" value="0" min="0">
+                <span class="amount-display" id="dime-amount">$0.00</span>
             </div>
             <div class="input-group">
                 <label for="nickel">Nickels:</label>
                 <input type="number" id="nickel" value="0" min="0">
+                <span class="amount-display" id="nickel-amount">$0.00</span>
             </div>
             <div class="input-group">
                 <label for="penny">Pennies:</label>
                 <input type="number" id="penny" value="0" min="0">
+                <span class="amount-display" id="penny-amount">$0.00</span>
             </div>
         </div>
+        
         <button onclick="calculateTotal()">Calculate Total</button>
-        <h2>Total Amount: $<span id="totalAmount">0.00</span></h2>
+        <h2>Total Amount: <span id="totalAmount" class="amount-box">$0.00</span></h2>
         <button class="clear" onclick="clearFields()">Clear All</button>
         <button class="history" onclick="window.location.href='history.html'">Open Change History</button>
     </div>
+
     <script src="script.js"></script>
 </body>
 </html>
